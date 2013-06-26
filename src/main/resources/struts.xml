@@ -6,9 +6,15 @@
 <struts>
 	<constant name="struts.configuration.xml.reload" value="true"></constant>
 	
-	<package name="views" namespace="/Views" extends="struts-defauts">
-		<action name="index">
-			<result>index/index.jsp</result>
+	<package name="view" namespace="/View" extends="struts-default">
+		<action name="Index">
+			<result>Index/index.jsp</result>
+		</action>
+		<action name="SaveName">
+			<result>Process/saveName.jsp</result>
+		</action>
+		<action name="NextPage">
+			<result>Process/nextPage.jsp</result>
 		</action>
 	</package>
 </struts>
